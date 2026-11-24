@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
+  
+</head>
+<body>
+  
+       <h1>ini belajar js</h1>
+       
+       <script>
+             // code js
+             
+             const name ="yanto";
+             let umur =99;
+             let nilai = 100;
+             let aktif = true;
+             
+             console.log("nama", name);
+             console.log("umur", umur);
+             console.log("nilai", nilai);
+             console.log("aktif", aktif);
+             console.log("tipe nilai",typeof nilai);
+             
+             const tugas = 80;
+             const uts = 70;
+             const uas = 90;
+             const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+             
+             console.log("Nilai akhir ", akhir);
+             console.log("lulus:", akhir >= 60);
+             
+             // percabangan if else
+             const nilai2 = 78;
+             let kategori;
+             
+             if (nilai2 >=85 ) {
+               kategori = "A";
+             } else if (nilai2 >= 70) {
+               kategori ="B";
+             } else if (nilai2 >= 60) {
+               kategori ="C";
+             } else {
+               kategori = "D";
+             }
+             
+             console.log("nilai", nilai2);
+             console.log("kategori", kategori);
+             
+             // perulangan dan fungsi dasar
+             function hitungDiskon(harga, persen) {
+               return harga - (harga * persen / 100);
+             }
+             
+             for (let i = 1; i <=3; i++) {
+               const harga = i *10000;
+               const bayar = hitungDiskon(harga, 10);
+               console.log("barang", i, "Harga:",harga, "Bayar:", bayar)
+             }
+             
+       
+// PRAKTIKUM MANDIRI PENGOLAH NILAI MAHASISWA
+
+const namaMahasiswa = "Yanto";
+const nilaiTugas = 80;
+const nilaiUTS = 70;
+const nilaiUAS = 90;
+
+// Menghitung nilai akhir
+const nilaiAkhirMandiri =
+    (nilaiTugas * 0.30) +
+    (nilaiUTS * 0.30) +
+    (nilaiUAS * 0.40);
+
+// Menentukan kelulusan
+let statusKelulusan;
+
+if (nilaiAkhirMandiri >= 60) {
+    statusKelulusan = "LULUS";
+} else {
+    statusKelulusan = "TIDAK LULUS";
+}
+
+// Menampilkan hasil
+console.log("Nama Mahasiswa:", namaMahasiswa);
+console.log("Nilai Akhir:", nilaiAkhirMandiri);
+console.log("Status Kelulusan:", statusKelulusan);
+
+ </script>
+</body>
+  </html>
